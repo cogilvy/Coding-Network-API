@@ -23,7 +23,7 @@ class ApplicationController < ActionController::API
     end
   end
 
-  def current_user
+  def session_user
     if decoded_token
       user_id = decoded_token[0]['user_id']
       @user = User.find_by(id: user_id)
