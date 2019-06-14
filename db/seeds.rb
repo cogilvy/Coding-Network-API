@@ -3,9 +3,9 @@ Comment.destroy_all
 Post.destroy_all
 User.destroy_all
 
-chris = User.create(username: "Chris", password_digest: "123")
-lorenzo = User.create(username: "Lorenzo", password_digest: "123")
-frankie = User.create(username: "Frankie", password_digest: "123")
+chris = User.create(username: "Chris", password: "123")
+lorenzo = User.create(username: "Lorenzo", password: "123")
+frankie = User.create(username: "Frankie", password: "123")
 
 post1 = Post.create(title: "Hello", content: "First post", user_id: chris.id)
 post2 = Post.create(title: "There", content: "Second post", user_id: lorenzo.id)

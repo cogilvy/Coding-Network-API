@@ -4,6 +4,9 @@ Rails.application.routes.draw do
         resources :users, :posts
         resources :likes, only: [:index, :new, :create, :destroy]
         resources :comments, only: [:index, :new, :create, :destroy]
+
+        post '/login', to: 'auth#create'
+        get '/profile', to: 'users#profile'
       end
   end
 end
