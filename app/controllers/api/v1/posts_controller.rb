@@ -1,4 +1,5 @@
 class Api::V1::PostsController < ApplicationController
+  skip_before_action :authorized
   def index
     @posts = Post.all
     render json: @posts
