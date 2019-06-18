@@ -1,4 +1,6 @@
 class Api::V1::CommentsController < ApplicationController
+  skip_before_action :authorized#, only: [:login]
+
   def index
     @comments = Comment.all
     render json: @comments
@@ -6,7 +8,9 @@ class Api::V1::CommentsController < ApplicationController
 
   def create
     @comment = Comment.new(comment_params)
+    # byebug
     @comment.save
+    render json: @comment
   end
 
   def destroy
