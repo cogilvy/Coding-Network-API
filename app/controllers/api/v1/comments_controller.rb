@@ -1,5 +1,5 @@
 class Api::V1::CommentsController < ApplicationController
-  skip_before_action :authorized#, only: [:login]
+  # skip_before_action :authorized#, only: [:login]
 
   def index
     @comments = Comment.all

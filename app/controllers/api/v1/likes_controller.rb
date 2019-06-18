@@ -1,5 +1,5 @@
 class Api::V1::LikesController < ApplicationController
-  skip_before_action :authorized
+  # skip_before_action :authorized
   def index
     @likes = Like.all
     render json: @likes
