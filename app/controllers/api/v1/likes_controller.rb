@@ -12,6 +12,7 @@ class Api::V1::LikesController < ApplicationController
   def create
     @like = Like.new(like_params)
     @like.save
+    render json: @like
   end
 
   def destroy

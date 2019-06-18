@@ -40,6 +40,6 @@ Like.create(user_id: lorenzo.id, post_id: post1.id)
 
 Comment.create(content: "this sucks", post_id: post1.id, user_id: lorenzo.id)
 Comment.create(content: "this is okay", post_id: post1.id, user_id: lorenzo.id)
-Comment.create(content: "this is a longer comment this is a longer comment this is a longer comment this is a longer comment this is a longer comment this is a longer comment this is a longer comment this is a longer comment this is a longer comment this is a longer comment ", post_id: post1.id, user_id: frankie.id)
-Comment.create(content: "this is cool this is a longer comment this is a longer comment this is a longer comment this is a longer comment ", post_id: post2.id, user_id: lorenzo.id)
+Comment.create(content: "this is a longer comment", post_id: post1.id, user_id: frankie.id)
+Comment.create(content: "this is cool this is a longer comment", post_id: post2.id, user_id: lorenzo.id)
 Comment.create(content: "this is a comment", post_id: post3.id, user_id: frankie.id)
