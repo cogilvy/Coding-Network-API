@@ -7,6 +7,7 @@ chris = User.create(username: "Chris", password: "123")
 lorenzo = User.create(username: "Lorenzo", password: "123")
 frankie = User.create(username: "Frankie", password: "123")
 
+
 post1 = Post.create(title: "Amazon Game Studios reportedly lays off dozens in shake-up", category: "Technology", content: "Amazon Game Studios has quietly laid off dozens of employees on the last day of E3, one of the biggest video game conferences in the world, according to Kotaku. The company reportedly told affected employees that they only have 60 days to find new positions within Amazon. If they fail to do so within the allotted period, they'll have to leave the company with (thankfully) a severance package in tow. In addition, the studio has also cancelled some of the games it has yet to announce.
 
 While it sounds like the studio is in trouble, it's not shutting its doors altogether. Those waiting for New World and Crucible don't have to worry: Amazon told Kotaku that they're still in development. In fact, while the spokesperson didn't reveal how many employees were let go, they confirmed the news and told the publication that the layoffs were part of a reorganization to prioritize the development of those two titles, as well as of new unannounced projects.", user_id: chris.id)
